@@ -1,4 +1,4 @@
-# 🍌 Digidex Frontend
+# Digidex Frontend
 
 The `apeswap-frontend` repo is the primary frontend repository for [digidex.Finance], Smart Dex Resposity.
 
