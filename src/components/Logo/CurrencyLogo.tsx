@@ -15,7 +15,7 @@ const getTokenLogoURL = (address: string, chainId: any) => {
       "0x55d398326f99059fF775485246999027B3197955".toLowerCase()
     ) {
       imageURL =
-        "https://raw.githubusercontent.com/macan88/digidex-token-list/main/assets/USDT.svg";
+        "https://raw.githubusercontent.com/digichaincoin/digidex-token-list/main/assets/USDT.svg";
     } else {
       imageURL = `https://assets-cdn.trustwallet.com/blockchains/smartchain/assets/${address}/logo.png`;
     }
@@ -69,7 +69,7 @@ export default function CurrencyLogo({
         <StyledNativeCurrencyLogo
           size={size}
           style={style}
-          src="https://raw.githubusercontent.com/macan88/digidex-token-list/main/assets/MATIC.svg"
+          src="https://raw.githubusercontent.com/digichaincoin/digidex-token-list/main/assets/MATIC.svg"
         />
       );
     }
@@ -78,7 +78,7 @@ export default function CurrencyLogo({
         <StyledNativeCurrencyLogo
           size={size}
           style={style}
-          src="https://raw.githubusercontent.com/macan88/digidex-token-list/main/assets/ETH.svg"
+          src="https://raw.githubusercontent.com/digichaincoin/digidex-token-list/main/assets/ETH.svg"
         />
       );
     }
@@ -86,7 +86,7 @@ export default function CurrencyLogo({
       <StyledNativeCurrencyLogo
         size={size}
         style={style}
-        src="https://raw.githubusercontent.com/macan88/digidex-token-list/main/assets/WBNB.svg"
+        src="https://raw.githubusercontent.com/digichaincoin/digidex-token-list/main/assets/WBNB.svg"
       />
     );
   }

@@ -20,8 +20,8 @@ interface ServiceTokenDisplayProps {
 
 const setUrls = (tokenSymbol: string) => {
   return [
-    `https://raw.githubusercontent.com/macan88/digidex-token-list/main/assets/${tokenSymbol?.toUpperCase()}.svg`,
-    `https://raw.githubusercontent.com/macan88/digidex-token-list/main/assets/${tokenSymbol?.toUpperCase()}.png`,
+    `https://raw.githubusercontent.com/digichaincoin/digidex-token-list/main/assets/${tokenSymbol?.toUpperCase()}.svg`,
+    `https://raw.githubusercontent.com/digichaincoin/digidex-token-list/main/assets/${tokenSymbol?.toUpperCase()}.png`,
   ];
 };
 

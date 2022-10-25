@@ -8,7 +8,7 @@ export const getMaticTokenLogoURL = (address: string) => {
   }
   if (address?.toLowerCase() === "0xc2132d05d31c914a87c6611c10748aeb04b58e8f") {
     uri =
-      "https://raw.githubusercontent.com/macan88/digidex-token-list/main/assets/USDT.svg";
+      "https://raw.githubusercontent.com/digichaincoin/digidex-token-list/main/assets/USDT.svg";
   }
   if (address?.toLowerCase() === "0x2791bca1f2de4661ed88a30c99a7a9449aa84174") {
     address = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48";
@@ -541,7 +541,7 @@ export const getMaticTokenLogoURL = (address: string) => {
     "0x5d47baba0d66083c52009271faf3f50dcc01023c".toLowerCase()
   ) {
     uri =
-      "https://raw.githubusercontent.com/macan88/assets/master/blockchains/smartchain/assets/0x4732A86106064577933552FCea993D30BEC950a5/logo.png";
+      "https://raw.githubusercontent.com/digichaincoin/assets/master/blockchains/smartchain/assets/0x4732A86106064577933552FCea993D30BEC950a5/logo.png";
   }
   if (!uri) {
     uri = `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${address}/logo.png`;

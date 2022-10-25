@@ -12,13 +12,13 @@ export const moonPayBaseUrl =
 
 export const baseUrlStrapi = "https://digiswap-strapi.herokuapp.com";
 const EXCHANGE_SUBGRAPH_URL =
-  "https://graph.digidex.finance/subgraphs/name/macan88/digichain/graphql";
+  "https://graph.digidex.finance/subgraphs/name/digichaincoin/digichain/graphql";
 const EXCHANGE_POLYGON_SUBGRAPH_URL =
-  "https://api.thegraph.com/subgraphs/name/macan88/digichain/";
+  "https://api.thegraph.com/subgraphs/name/digichaincoin/digichain/";
 
 export const digiswapListUrl =
   process.env.REACT_APP_LISTS_CONFIG_URL ||
-  "https://raw.githubusercontent.com/macan88/digidex-list/main/config";
+  "https://raw.githubusercontent.com/digichaincoin/digidex-list/main/config";
 /* eslint-disable camelcase */
 
 export interface TradePair {

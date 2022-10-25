@@ -3,7 +3,7 @@ import { Nfa } from "state/types";
 const fetchNfas = async () => {
   try {
     const response = await fetch(
-      "https://raw.githubusercontent.com/macan88/non-fungible-apes/main/info/apesData.json"
+      "https://raw.githubusercontent.com/digichaincoin/non-fungible-apes/main/info/apesData.json"
     );
     const nfaResp = await response.json();
     if (nfaResp.statusCode === 500) {
@@ -12,7 +12,7 @@ const fetchNfas = async () => {
     const nfaImageReplace = nfaResp.map((nfa: Nfa) => {
       return {
         ...nfa,
-        image: `https://raw.githubusercontent.com/macan88/non-fungible-apes/main/images/${nfa.index}.png`,
+        image: `https://raw.githubusercontent.com/digichaincoin/non-fungible-apes/main/images/${nfa.index}.png`,
       };
     });
     return nfaImageReplace;

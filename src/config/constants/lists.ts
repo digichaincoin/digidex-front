@@ -3,7 +3,7 @@ import { ChainId } from "@digi.swap/sdk";
 export const UNSUPPORTED_LIST_URLS: string[] = [];
 
 const NFT_INDEX =
-  "https://raw.githubusercontent.com/macan88/digidex-token-list/main/lists/nftindex.json";
+  "https://raw.githubusercontent.com/digichaincoin/digidex-token-list/main/lists/nftindex.json";
 const PANCAKE_EXTENDED =
   "https://tokens.pancakeswap.finance/pancakeswap-extended.json";
 const PANCAKE_100 =
@@ -41,26 +41,26 @@ export const EXTENDED_LIST_DETAILS: Record<string, ExtendedListType> = {
     name: "BNB Top 300",
     warning:
       "The ApeSwap DEX is decentralized, meaning that anyone can create or add liquidity for a token. Not all tokens on this list have been reviewed by ApeSwap or passed our due diligence process. Some tokens on this list may present scam risks, including the loss of funds.",
-    logo: "https://raw.githubusercontent.com/macan88/digidex-token-list/main/assets/WBNB.svg",
+    logo: "https://raw.githubusercontent.com/digichaincoin/digidex-token-list/main/assets/WBNB.svg",
     chainId: ChainId.BSC,
   },
   "Quickswap Token List": {
     name: "Polygon List",
     warning:
       "The ApeSwap DEX is decentralized, meaning that anyone can create or add liquidity for a token. Not all tokens on this list have been reviewed by ApeSwap or passed our due diligence process. Some tokens on this list may present scam risks, including the loss of funds.",
-    logo: "https://raw.githubusercontent.com/macan88/digidex-token-list/main/assets/MATIC.svg",
+    logo: "https://raw.githubusercontent.com/digichaincoin/digidex-token-list/main/assets/MATIC.svg",
     chainId: ChainId.MATIC,
   },
   "PancakeSwap Top 100": {
     name: "BNB Top 100",
     warning:
       "The ApeSwap DEX is decentralized, meaning that anyone can create or add liquidity for a token. Not all tokens on this list have been reviewed by ApeSwap or passed our due diligence process. Some tokens on this list may present scam risks, including the loss of funds.",
-    logo: "https://raw.githubusercontent.com/macan88/digidex-token-list/main/assets/WBNB.svg",
+    logo: "https://raw.githubusercontent.com/digichaincoin/digidex-token-list/main/assets/WBNB.svg",
     chainId: ChainId.BSC,
   },
   "LICO Index List": {
     name: "LICO Index List",
-    logo: "https://raw.githubusercontent.com/macan88/digidex-token-list/main/assets/LICO.svg",
+    logo: "https://raw.githubusercontent.com/digichaincoin/digidex-token-list/main/assets/LICO.svg",
     chainId: ChainId.BSC,
   },
 };

@@ -10,8 +10,8 @@ export const getTokenUrlBySymbol = async (
   if (!tokenSymbol) {
     return null;
   }
-  const fetchUrlSvg = `https://raw.githubusercontent.com/macan88/digidex-token-list/main/assets/${tokenSymbol}.svg`;
-  const fetchUrlPng = `https://raw.githubusercontent.com/macan88/digidex-token-list/main/assets/${tokenSymbol}.png`;
+  const fetchUrlSvg = `https://raw.githubusercontent.com/digichaincoin/digidex-token-list/main/assets/${tokenSymbol}.svg`;
+  const fetchUrlPng = `https://raw.githubusercontent.com/digichaincoin/digidex-token-list/main/assets/${tokenSymbol}.png`;
   const url = fetch(fetchUrlSvg).then((svRes) => {
     if (svRes.ok) {
       storeImage[tokenSymbol] = fetchUrlSvg;

@@ -41,7 +41,7 @@ const Nft = () => {
             }}
           >
             <StyledAnchor
-              href="https://github.com/macan88/non-fungible-apes"
+              href="https://github.com/digichaincoin/non-fungible-apes"
               target="_blank"
               rel="noopener noreferrer"
             >
