@@ -44,9 +44,9 @@
     theme-ui "^0.13.1"
     yalc "^1.0.0-pre.53"
 
-"@digidexfinance/eslint-config-apeswap@1.0.0":
+"@digidexfinance/eslint-config-digidex@1.0.0":
   version "1.0.0"
-  resolved "https://npm.pkg.github.com/download/@digidexfinance/eslint-config-apeswap/1.0.0/cf301984e97808b8032e2cd4118a181b03c1559a5c7c14dd9bff955e4f7c2edc#d095386c092f2d98964a05e7b8dd90bb1909e47a"
+  resolved "https://npm.pkg.github.com/download/@digidexfinance/eslint-config-digidex/1.0.0/cf301984e97808b8032e2cd4118a181b03c1559a5c7c14dd9bff955e4f7c2edc#d095386c092f2d98964a05e7b8dd90bb1909e47a"
   integrity sha512-mW1DhwVSxMi6AOOjyN3c0l+GId0curMAn0ui/3aKnk+kF+ffWlPCJEY4sqwU2hZbznrSvHlB0aBW+aplfDILtw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.7.0"
