@@ -47,8 +47,8 @@ export const getClaimRefundAddress = (chainId: number) => {
 export const getAuctionAddress = (chainId: number) => {
   return addresses.auction[chainId];
 };
-export const getDigiPriceGetterAddress = (chainId: number) => {
-  return addresses.digiPriceGetter[chainId];
+export const getDigichainPriceGetterAddress = (chainId: number) => {
+  return addresses.digichainPriceGetter[chainId];
 };
 export const getSmartPriceGetter = (
   chainId: number,

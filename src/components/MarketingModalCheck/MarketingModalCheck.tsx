@@ -100,7 +100,7 @@ const MarketingModalCheck = () => {
 
   return lendingRoute ? (
     <MarketingModal
-      title={t("Welcome to ApeSwap's Lending Network")}
+      title={t("Welcome to DigiDex's Lending Network")}
       description={t("How does it work?")}
       onDismiss={onDismiss}
       startEarning={onDismiss}
@@ -110,7 +110,7 @@ const MarketingModalCheck = () => {
     </MarketingModal>
   ) : farmsRoute ? (
     <MarketingModal
-      title={t("Welcome to ApeSwap's Farms")}
+      title={t("Welcome to DigiDex's Farms")}
       description={t("Start earning passive income with your cryptocurrency!")}
       onDismiss={onDismiss}
       startEarning={onDismiss}
@@ -120,8 +120,8 @@ const MarketingModalCheck = () => {
     </MarketingModal>
   ) : poolsRoute ? (
     <MarketingModal
-      title={t("Welcome to ApeSwap's Pools")}
-      description={t("Earn tokens by staking DIGICHAIN or GDIGI")}
+      title={t("Welcome to Digidex's Pools")}
+      description={t("Earn tokens by staking DIGICHAIN or OTHERCOIN")}
       onDismiss={onDismiss}
       startEarning={onDismiss}
       startEarningText={t("Start Earning")}
@@ -130,7 +130,7 @@ const MarketingModalCheck = () => {
     </MarketingModal>
   ) : billsRoute ? (
     <MarketingModal
-      title={t("Welcome to ApeSwap Treasury Bills")}
+      title={t("Welcome to DigiDex Treasury Bills")}
       onDismiss={onDismiss}
       startEarning={onDismiss}
       startEarningText={t("I'M READY")}

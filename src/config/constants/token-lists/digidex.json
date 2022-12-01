@@ -49,7 +49,7 @@
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/digichaincoin/digidex-token-list/main/public/images/coins/BUSD.svg"
     },
-  
+
     {
       "name": "ETH Token",
       "symbol": "ETH",
@@ -74,7 +74,7 @@
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/digichaincoin/digidex-token-list/main/public/images/coins/ETH.svg"
     },
- 
+
     {
       "name": "PancakeSwap Token",
       "symbol": "CAKE",
@@ -183,7 +183,7 @@
       "type": "deflationary",
       "logoURI": "https://raw.githubusercontent.com/digichaincoin/digidex-token-list/main/public/images/coins/BRICK.png"
     },
-  
+
     {
       "name": "HappinessToken",
       "symbol": "HPS",

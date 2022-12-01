@@ -12,7 +12,7 @@ export const moonPayBaseUrl =
 
 export const baseUrlStrapi = "https://digiswap-strapi.herokuapp.com";
 const EXCHANGE_SUBGRAPH_URL =
-  "https://graph.digidex.finance/subgraphs/name/digichaincoin/digichain/graphql";
+  "https://api.thegraph.com/subgraphs/name/digichaincoin/digidex";
 const EXCHANGE_POLYGON_SUBGRAPH_URL =
   "https://api.thegraph.com/subgraphs/name/digichaincoin/digichain/";
 

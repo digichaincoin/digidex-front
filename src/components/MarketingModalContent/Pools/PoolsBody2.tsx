@@ -26,7 +26,7 @@ const PoolsBody2: React.FC = () => {
         <StyledText>
           If you don&apos;t own DIGICHAIN already, go to our{" "}
           <MiniButton onClick={openExchange}>Exchange</MiniButton> to acquire
-          some! (or <MiniButton onClick={openGdigi}>GDIGI</MiniButton>)
+          some! (or <MiniButton onClick={openGdigi}>GOLDENDIGI</MiniButton>)
         </StyledText>
       </RightContent>
     </ModalContent>

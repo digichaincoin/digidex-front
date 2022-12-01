@@ -6,7 +6,7 @@ import {
   getNativeWrappedAddress,
   getSmartPriceGetter,
 } from "utils/addressHelper";
-import digiPriceGetter from "config/abi/digiPriceGetter.json";
+import digichainPriceGetter from "config/abi/digichainPriceGetter.json";
 import { getBalanceNumber } from "utils/formatBalance";
 
 export const useTokenPriceUsd = (
@@ -21,7 +21,10 @@ export const useTokenPriceUsd = (
       ? [currency?.address, currency?.decimals]
       : ["", 18];
   const priceGetterAddress = getSmartPriceGetter(chainId, smartRouter);
-  const priceGetterContract = new Contract(priceGetterAddress, digiPriceGetter);
+  const priceGetterContract = new Contract(
+    priceGetterAddress,
+    digichainPriceGetter
+  );
 
   const nativeTokenAddress = getNativeWrappedAddress(chainId);
 

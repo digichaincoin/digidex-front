@@ -106,7 +106,7 @@ const contracts = {
     [ChainId.BSC_TESTNET]: "0x29436C9fd14d9692012262Be4917712D4097D4B3",
     [ChainId.MATIC]: "",
   },
-  digiPriceGetter: {
+  digichainPriceGetter: {
     [ChainId.BSC]: "0x46c094f24eed2abaacba9c43ca49591afa0bd6a2",
     [ChainId.BSC_TESTNET]: "0xd722f9A2950E35Ab3EeD1d013c214671750A638B",
     [ChainId.MATIC]: "0x05D6C73D7de6E02B3f57677f849843c03320681c",

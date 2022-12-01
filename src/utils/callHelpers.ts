@@ -41,7 +41,7 @@ export const stake = async (masterChefContract: Masterchef, pid, amount) => {
   return masterChefContract
     .deposit(
       pid,
-      new BigNumber(amount).times(new BigNumber(10).pow(18)).toString()
+      new BigNumber(amount).times(new BigNumber(10).pow(9)).toString()
     )
     .then((trx) => {
       return trx.wait();
@@ -50,7 +50,7 @@ export const stake = async (masterChefContract: Masterchef, pid, amount) => {
 
 export const sousStake = async (sousChefContract: SousChef, amount) => {
   return sousChefContract
-    .deposit(new BigNumber(amount).times(new BigNumber(10).pow(18)).toString())
+    .deposit(new BigNumber(amount).times(new BigNumber(10).pow(9)).toString())
     .then((trx) => {
       return trx.wait();
     });
@@ -58,7 +58,7 @@ export const sousStake = async (sousChefContract: SousChef, amount) => {
 
 export const sousStakeBnb = async (sousChefContract: SousChef, amount) => {
   return sousChefContract
-    .deposit(new BigNumber(amount).times(new BigNumber(10).pow(18)).toString())
+    .deposit(new BigNumber(amount).times(new BigNumber(10).pow(9)).toString())
     .then((trx) => {
       return trx.wait();
     });
@@ -66,7 +66,7 @@ export const sousStakeBnb = async (sousChefContract: SousChef, amount) => {
 
 export const jungleStake = async (jungleChefContract: JungleChef, amount) => {
   return jungleChefContract
-    .deposit(new BigNumber(amount).times(new BigNumber(10).pow(18)).toString())
+    .deposit(new BigNumber(amount).times(new BigNumber(10).pow(9)).toString())
     .then((trx) => {
       return trx.wait();
     });
@@ -76,7 +76,7 @@ export const unstake = async (masterChefContract: Masterchef, pid, amount) => {
   if (pid === 0) {
     return masterChefContract
       .leaveStaking(
-        new BigNumber(amount).times(new BigNumber(10).pow(18)).toString()
+        new BigNumber(amount).times(new BigNumber(10).pow(9)).toString()
       )
       .then((trx) => {
         return trx.wait();
@@ -85,7 +85,7 @@ export const unstake = async (masterChefContract: Masterchef, pid, amount) => {
   return masterChefContract
     .withdraw(
       pid,
-      new BigNumber(amount).times(new BigNumber(10).pow(18)).toString()
+      new BigNumber(amount).times(new BigNumber(10).pow(9)).toString()
     )
     .then((trx) => {
       return trx.wait();
@@ -94,7 +94,7 @@ export const unstake = async (masterChefContract: Masterchef, pid, amount) => {
 
 export const sousUnstake = async (sousChefContract: SousChef, amount) => {
   return sousChefContract
-    .withdraw(new BigNumber(amount).times(new BigNumber(10).pow(18)).toString())
+    .withdraw(new BigNumber(amount).times(new BigNumber(10).pow(9)).toString())
     .then((trx) => {
       return trx.wait();
     });
@@ -102,7 +102,7 @@ export const sousUnstake = async (sousChefContract: SousChef, amount) => {
 
 export const jungleUnstake = async (jungleChefContract: JungleChef, amount) => {
   return jungleChefContract
-    .withdraw(new BigNumber(amount).times(new BigNumber(10).pow(18)).toString())
+    .withdraw(new BigNumber(amount).times(new BigNumber(10).pow(9)).toString())
     .then((trx) => {
       return trx.wait();
     });
@@ -140,7 +140,7 @@ export const jungleHarvest = async (jungleChefContract: JungleChef) => {
 export const bid = async (auctionContract: Auction, amount, id) => {
   return auctionContract
     .bid(id, {
-      value: new BigNumber(amount).times(new BigNumber(10).pow(18)).toString(),
+      value: new BigNumber(amount).times(new BigNumber(10).pow(9)).toString(),
     })
     .then((trx) => {
       return trx.wait();
@@ -167,7 +167,7 @@ export const listNfa = async (
       auctionLength,
       timeToExtend,
       minimumExtendTime,
-      new BigNumber(minimumBid).times(new BigNumber(10).pow(18)).toString()
+      new BigNumber(minimumBid).times(new BigNumber(10).pow(9)).toString()
     )
     .then((trx) => {
       return trx.wait();

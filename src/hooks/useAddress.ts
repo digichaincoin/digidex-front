@@ -70,8 +70,8 @@ export const useClaimRefundAddress = () => {
 export const useAuctionAddress = () => {
   return useAddress(addresses.auction);
 };
-export const useDigiPriceGetterAddress = () => {
-  return useAddress(addresses.digiPriceGetter);
+export const useDigichainPriceGetterAddress = () => {
+  return useAddress(addresses.digichainPriceGetter);
 };
 
 export const useVaultDigiAddressV1 = () => {

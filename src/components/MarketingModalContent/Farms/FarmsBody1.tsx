@@ -29,7 +29,7 @@ const FarmsBody1: React.FC = () => {
         <MainHeaderText>{t("Connect Your Wallet")}</MainHeaderText>
         <StyledText>
           <MiniButton onClick={openConnectModal}>{t("Click here")} </MiniButton>{" "}
-          {t("to connect your wallet to ApeSwap.")}
+          {t("to connect your wallet to DigiDex.")}
         </StyledText>
       </RightContent>
     </ModalContent>

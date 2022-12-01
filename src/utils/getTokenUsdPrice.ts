@@ -1,9 +1,9 @@
 import {
-  getDigiPriceGetterAddress,
+  getDigichainPriceGetterAddress,
   getNativeWrappedAddress,
   getSmartPriceGetter,
 } from "utils/addressHelper";
-import digiPriceGetterABI from "config/abi/digiPriceGetter.json";
+import digichainPriceGetterABI from "config/abi/digichainPriceGetter.json";
 import { getBalanceNumber } from "utils/formatBalance";
 import multicall from "utils/multicall";
 import { Currency, SmartRouter, Token } from "@digi.swap/sdk";
@@ -16,7 +16,7 @@ export const getTokenUsdPrice = async (
   lp?: boolean,
   isNative?: boolean
 ) => {
-  const priceGetterAddress = getDigiPriceGetterAddress(chainId);
+  const priceGetterAddress = getDigichainPriceGetterAddress(chainId);
   const nativeTokenAddress = getNativeWrappedAddress(chainId);
   if (!priceGetterAddress) return 0;
   if ((tokenAddress || isNative) && tokenDecimal) {
@@ -32,7 +32,9 @@ export const getTokenUsdPrice = async (
           params: [isNative ? nativeTokenAddress : tokenAddress, tokenDecimal],
         };
 
-    const tokenPrice = await multicall(chainId, digiPriceGetterABI, [call]);
+    const tokenPrice = await multicall(chainId, digichainPriceGetterABI, [
+      call,
+    ]);
     const filterPrice = getBalanceNumber(tokenPrice[0], tokenDecimal);
     return filterPrice;
   }
@@ -56,7 +58,7 @@ export const getCurrencyUsdPrice = async (
   const [address, decimals] =
     currency instanceof Token
       ? [currency?.address, currency?.decimals]
-      : ["", 9];
+      : ["", 18];
   const priceGetterAddress = getSmartPriceGetter(chainId, smartRouter);
 
   const nativeTokenAddress = getNativeWrappedAddress(chainId);
@@ -72,7 +74,9 @@ export const getCurrencyUsdPrice = async (
           name: "getPrice",
           params: [isNative ? nativeTokenAddress : address, decimals],
         };
-    const tokenPrice = await multicall(chainId, digiPriceGetterABI, [call]);
+    const tokenPrice = await multicall(chainId, digichainPriceGetterABI, [
+      call,
+    ]);
     return getBalanceNumber(tokenPrice[0], decimals);
   }
   return null;

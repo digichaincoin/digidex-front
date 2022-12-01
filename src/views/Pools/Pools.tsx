@@ -75,7 +75,7 @@ const Pools: React.FC = () => {
   }, [observerIsSet]);
 
   const allNonAdminPools = allPools.filter(
-    (pool) => !pool.forAdmins && pool?.poolCategory !== PoolCategory.JUNGLE
+    (pool) => !pool.forAdmins && pool?.poolCategory !== PoolCategory.BINANCE
   );
   const curPools = allNonAdminPools.map((pool) => {
     return {

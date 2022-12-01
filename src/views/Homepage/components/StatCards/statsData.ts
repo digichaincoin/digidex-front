@@ -16,7 +16,7 @@ export const statsData: (t: ContextApi["t"]) => StatType[] = (t) => [
     id: "totalVolume",
   },
   {
-    logo: MarketCap,
+    logo: Trade,
     title: t("Market Cap"),
     value: null,
     id: "marketCap",

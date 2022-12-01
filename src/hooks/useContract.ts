@@ -21,7 +21,7 @@ import profile from "config/abi/digichainProfile.json";
 import auction from "config/abi/auction.json";
 import vaultDigiV1 from "config/abi/vaultDigiV1.json";
 import vaultDigiV2 from "config/abi/vaultDigiV2.json";
-import digiPriceGetter from "config/abi/digiPriceGetter.json";
+import digichainPriceGetter from "config/abi/digichainPriceGetter.json";
 import miniChef from "config/abi/miniDigiV2.json";
 import babToken from "config/abi/babToken.json";
 import raffle from "config/abi/raffle.json";
@@ -46,7 +46,7 @@ import {
   EnsPublicResolver,
   EnsRegistrar,
   Multicall,
-  DigiPriceGetter,
+  DigichainPriceGetter,
   SousChef,
   Weth,
   DigichainProfile,
@@ -67,7 +67,7 @@ import {
   Multicallv3,
 } from "config/abi/types";
 import {
-  useDigiPriceGetterAddress,
+  useDigichainPriceGetterAddress,
   useAuctionAddress,
   useBabTokenAddress,
   useDigichainAddress,
@@ -211,11 +211,11 @@ export const useVaultDigiV2 = () => {
   return useContract(vaultDigiV2, useVaultDigiAddressV2()) as VaultDigiV2;
 };
 
-export const useDigiPriceGetter = () => {
+export const useDigichainPriceGetter = () => {
   return useContract(
-    digiPriceGetter,
-    useDigiPriceGetterAddress()
-  ) as DigiPriceGetter;
+    digichainPriceGetter,
+    useDigichainPriceGetterAddress()
+  ) as DigichainPriceGetter;
 };
 
 export const useMiniChefContract = () => {
